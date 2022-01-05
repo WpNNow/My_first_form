@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Page</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- disabled - блокирует поле -->
+        <!-- tabindex - порядок, когда tab жмешь (для radio - одинаковый) -->
+        <div class="form">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="parent">
+                    <div class="line">
+                        <label for="name">Имя</label>
+                        <div>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                tabindex="1"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="line">
+                        <label for="pas">Пароль</label>
+                        <div>
+                            <input
+                                type="password"
+                                name="pas"
+                                id="pas"
+                                tabindex="2"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="line" id="it">
+                        <label for="telephone">Телефон</label>
+                        <div>
+                            <input
+                                type="tel"
+                                name="telephone"
+                                id="telephone"
+                                tabindex="3"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="gender">Пол</label>
+                    <div>
+                        <p>
+                            <input
+                                checked
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                tabindex="4"
+                            />Мужской
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                                id="gender"
+                                tabindex="4"
+                            />Женский
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="bike">Имущество</label>
+                    <div>
+                        <p>
+                            <input
+                                checked
+                                class="custom-checkbox"
+                                type="checkbox"
+                                name="bike"
+                                id="bike"
+                                value="yes"
+                                tabindex="5"
+                            />Велосипед
+                        </p>
+                        <p>
+                            <input
+                                type="checkbox"
+                                class="custom-checkbox"
+                                name="car"
+                                value="yes"
+                                tabindex="6"
+                            />Автомобиль
+                        </p>
+                        <p>
+                            <input
+                                class="custom-checkbox"
+                                type="checkbox"
+                                name="flat"
+                                value="yes"
+                                tabindex="7"
+                            />Недвижимость
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="inf">Дополнительная информация</label>
+                    <div>
+                        <textarea
+                            name="text-inf"
+                            id="inf"
+                            tabindex="8"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="photo">Прикрепить фото</label>
+                    <div>
+                        <input
+                            type="file"
+                            name="photo"
+                            id="photo"
+                            tabindex="9"
+                        />
+                    </div>
+                </div>
+
+                <div>
+                    <label for="color">Любимый цвет</label>
+                    <div>
+                        <select name="color" id="color" tabindex="10">
+                            <option value="yellow">Желтый</option>
+                            <option selected value="red">Красный</option>
+                            <option value="pink">Розовый</option>
+                            <option value="green">Зеленый</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Действия</label>
+                    <div>
+                        <button class="submit" type="submit" tabindex="11">
+                            Отправить
+                        </button>
+                        <button class="reset" type="reset" tabindex="12">
+                            Очистить
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
